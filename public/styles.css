@@ -75,25 +75,31 @@ h4 { color: var(--wine); font-size: 1.1rem; line-height: 1.35; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
-  padding-block: clamp(2.75rem, 7vw, 6.5rem);
+  justify-items: center;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  padding-block: clamp(2.75rem, 6vw, 5rem);
+  text-align: center;
 }
 
-.hero h1 { max-width: 18ch; font-size: clamp(2.45rem, 5.6vw, 5.1rem); }
-.lede { max-width: 53ch; margin-top: 1.25rem; font-size: clamp(1rem, 1.65vw, 1.15rem); }
+.hero h1 {
+  max-width: 23ch;
+  margin-inline: auto;
+  font-size: clamp(2.2rem, 5.6vw, 4.5rem);
+  text-wrap: balance;
+}
 
-.hero-photo {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 48%;
+.lede { max-width: 53ch; margin-top: 1.25rem; font-size: clamp(1rem, 1.65vw, 1.15rem); }
+.hero .lede { margin-inline: auto; }
+
+.hero-video {
+  width: min(100%, 52rem);
+  aspect-ratio: 16 / 9;
   border-radius: 14px;
+  background: var(--ink);
 }
 
 .hero-actions, .purchase-actions { margin-top: 1.5rem; }
-.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.25rem; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .25rem 1.25rem; }
 .hero-actions .action { gap: .65rem; }
 .hero-actions .text-link { margin-top: 0; }
 .action {
@@ -160,17 +166,6 @@ figcaption { margin-top: .6rem; color: var(--muted); font-size: .875rem; }
 .result { display: block; margin-top: .45rem; color: var(--wine); }
 .video-error:not(:empty) { display: block; margin-top: .5rem; color: var(--wine); }
 
-.plan-link { grid-column: 1 / -1; justify-self: start; margin-top: 0; }
-.reel-plan {
-  padding: clamp(1.25rem, 4vw, 2.25rem);
-  margin-bottom: clamp(2.75rem, 6vw, 5rem);
-  border-radius: 12px;
-  background: var(--blush);
-}
-.reel-plan p { margin-top: .65rem; }
-.reel-plan ul { display: grid; gap: .35rem; margin: 1rem 0 0; padding-left: 1.25rem; }
-.reel-plan li::marker { color: var(--gold); }
-
 .offer-section { padding-block: clamp(2.75rem, 7vw, 6rem); background: var(--blush); }
 .offer-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.5rem clamp(2rem, 7vw, 6rem); }
 .deliverables { display: grid; gap: .6rem; max-width: 58ch; margin: 1.25rem 0 0; padding-left: 1.25rem; }
@@ -189,9 +184,8 @@ figcaption { margin-top: .6rem; color: var(--muted); font-size: .875rem; }
 
 @media (max-width: 740px) {
   .shell { width: calc(100% - 2rem); }
-  .hero, .example, .offer-grid { grid-template-columns: minmax(0, 1fr); }
+  .example, .offer-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { padding-block: 2.25rem; gap: 1.5rem; }
-  .hero-photo { aspect-ratio: 2 / 1; object-position: center 42%; }
   .example-video { justify-self: start; width: min(100%, 15rem); }
 }
 
