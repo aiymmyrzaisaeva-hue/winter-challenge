@@ -21,18 +21,18 @@ Append the following to the canonical HTTPS landing URL from the landing owner. 
 
 Use `&` if the landing URL already has a query and put tags before any `#`. In HTML attributes write `&amp;`. Keep tags lowercase and use placement labels only. Tagged traffic can include forwarded links. Visits with missing source, medium, or campaign are outside the measured cohort even if the referrer is Instagram.
 
-## Landing owner integration
+## Landing integration
 
-Keep the existing Vercel queue and deferred Insights script. Add this after them once on the landing page.
+The landing page loads the tracking module after the existing Vercel queue and deferred Insights script.
 
 ```html
 <script defer src="/funnel-analytics.js"></script>
 ```
 
-Add these attributes to the existing links and native videos. In this example the purchase href is the current repository listing. Replace all four hrefs together with the checkout owner's verified destination and keep actual labels, IDs, classes, and media attributes from the final page. The guide href must resolve to the actual guide section. Leave the two measured videos user-initiated.
+The landing page uses the selectors below. All four purchase links use the verified public Lava listing, and the two videos begin on user playback. Update all four links together if the checkout destination changes.
 
 ```html
-<a data-funnel-guide="hero" href="#guide-title">Читать бесплатный гайд</a>
+<a data-funnel-guide="hero" href="#examples">Читать бесплатный гайд</a>
 <a data-funnel-cta="hero" href="https://app.lava.top/products/31432966-4fab-412d-838e-9c4374c4f083">Купить участие</a>
 <video data-funnel-example="unboxing" controls playsinline src="/DfkWAbzs3Sb.mp4"></video>
 <a data-funnel-original="unboxing" href="https://www.instagram.com/p/DfkWAbzs3Sb/">Смотреть Reels</a>

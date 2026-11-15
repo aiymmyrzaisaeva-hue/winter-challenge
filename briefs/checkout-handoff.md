@@ -1,6 +1,6 @@
 # Winter Challenge offer and Lava checkout handoff
 
-Public buyer flow checked on 15 November 2026 in desktop Chrome, signed out of Lava.
+Public buyer flow checked on 15 November 2026 in desktop Chrome, signed out of Lava. Aiym confirmed 30 paid categories at 99 USD. The other participation terms are undecided.
 
 ## URLs and price for the landing page
 
@@ -25,14 +25,14 @@ The Russian interface was available through the public language menu. The two ta
 | Item | Evidence | What Aiym needs to confirm |
 | --- | --- | --- |
 | Product name and enrollment | Lava uses **Зимний сезонный челлендж 2027**. The final landing offer uses **Зимний челлендж 2026/2027**. The current Lava form is open. | Use Lava's existing name consistently unless Aiym chooses a different shared title. Confirm this is the correct product for the upcoming cohort, whether enrollment is open now, and any real deadline or capacity. |
-| Category count and materials | The public Lava listing says **30**. The landing says **34**. The [research index][index] lists 34 winter categories plus one «Другое» and links to example analyses and filming notes. This establishes the source library's count. | Confirm which categories and materials a buyer receives from this SKU. Verify that examples, opening frames, shooting steps and timing ship as described. If all 34 ship, update Lava to 34. If the SKU delivers a subset, verify its count and use that across both pages. |
+| Category count and materials | The public Lava listing says **30**. The landing says **34**. The [research index][index] lists 34 winter categories plus one «Другое» and links to example analyses and filming notes. This establishes the source library's count. | Aiym confirmed that this SKU delivers 30 categories. Use 30 across both pages. Verify the details of the paid materials before promising them. |
 | Plan and cohort dates | Lava says day-by-day. The landing says four weekly plans, 18 November to 15 December, with call dates of 24 November, 1, 8 and 15 December. The landing calendar points to 2026. | Confirm the actual plan's cadence and that the cohort runs **18 November–15 December 2026**. Confirm proposed call dates, start times, time zone and duration. |
 | Live feedback and recordings | The landing advertises four Zoom calls with feedback on participant Reels. The Lava description omits calls. | Confirm that all four calls are included in this price, who can submit videos, how to submit them, how feedback is allocated, and whether recordings are provided and for how long. |
 | Delivery and access | The landing promises indefinite access to materials. The public listing omits access duration. Lava documents a paid section and «Мои покупки» after purchase. [Lava purchase guide][buying] | Verify what the paid section and purchase email actually contain, how and when access and Zoom instructions arrive, the destination and support contact, and how long buyers retain access to materials. |
 | Refunds | Lava documents a seller-driven refund process. When a buyer voluntarily covers the service fee, Lava says the fee compensation is excluded from the refund. [Lava buyer payment guide][buyer-payments] · [Lava creator fees][creator-fees] | Supply the offer's actual refund terms, request channel, and any deadlines or conditions. |
 | Creator claims | Lava mentions 10,000 followers gained last winter. The landing mentions 40,000 gained over the past year. These cover different periods and the public screens do not substantiate either gain. | Provide the source and date range for any growth claim to be used on both pages. |
 
-Landing source — [current full-offer section](../public/index.html#L352). The original runbook records the mismatch in [issue 01][issue1] and the mobile checkout acceptance criteria in [issue 02][issue2].
+Landing source — [landing page source](../public/index.html). The original runbook records the mismatch in [issue 01][issue1] and the mobile checkout acceptance criteria in [issue 02][issue2].
 
 ## Russian copy for the Lava listing
 
@@ -44,7 +44,7 @@ Landing source — [current full-offer section](../public/index.html#L352). The 
 
 Выберите тему для своего зимнего Reels, придумайте первый кадр и решите, когда выложить ролик. Я собрала сезонные идеи и примеры, чтобы вы смогли подобрать формат для своего блога и перейти к съёмке.
 
-Внутри вас ждут примеры Reels, идеи, которые можно адаптировать под свою тему и аудиторию, и план, который помогает выбрать, что снимать сейчас и какие сюжеты оставить на следующие недели. Начните с темы, которую ваши зрители уже обсуждают — от подарков и декора до итогов года.
+Внутри — 30 категорий зимних Reels. Используйте примеры и сезонный план, чтобы выбрать, что снимать сейчас и какие идеи оставить на следующие недели. Начните с темы, которую ваши зрители уже обсуждают — от подарков и декора до итогов года.
 
 Стоимость участия — 99 USD, 89 EUR или 8 199 ₽. Валюту можно выбрать при оплате через Lava.
 
@@ -54,17 +54,13 @@ Landing source — [current full-offer section](../public/index.html#L352). The 
 
 > Челлендж пройдёт с 18 ноября по 15 декабря 2026 года. Каждую неделю вы сможете выбрать идею из плана, снять ролик и обсудить его на групповом созвоне в Zoom. На четырёх встречах я разберу Reels участников и покажу, как усилить первый кадр, съёмку и подачу.
 
-Если подтверждён полный комплект, замените второй абзац описания:
-
-> Внутри — 34 категории зимних Reels. В каждой есть примеры, идеи для первого кадра, план съёмки и подсказки, когда выложить ролик. Выберите тему для своего блога и снимите первый ролик по плану этой недели.
-
 Если подтверждён бессрочный доступ к материалам, добавьте рядом с ценой:
 
 > Материалы останутся у вас после челленджа. К ним можно возвращаться в любой зимний сезон.
 
 Перед публикацией условий участия рядом с ценой укажите подтверждённые время и часовой пояс созвонов, порядок отправки роликов, условия доступа к записям и возврата. Тот же текст используйте в разделе о покупке на лендинге.
 
-Если Aiym verified that the paid section contains access instructions, use this as the post-payment email message:
+Если Айым подтвердит, что инструкция находится в оплаченной части продукта, используйте этот текст письма после оплаты:
 
 > Спасибо за участие в «Зимнем сезонном челлендже 2027»! Войдите в Lava с email, который указали при оплате. Откройте «Мои покупки» и выберите челлендж. Внутри вы найдёте инструкцию по доступу к материалам.
 
